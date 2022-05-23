@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    
+}
+
+.wildlife h1 {
+    color: aliceblue;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.fox {
+    background-image: url(Rectangle.png);
+    height: 780px;
+    width: 1440px;
+}
+
+.latestarticles {
+    background-image: url(fon.png);
+    width: 1440px;
+    height: 1368px;
+}
+
+.footer {
+    background-image: url(footer.jpg);
+    height: 360px;
+    width: 1440px;
+}
