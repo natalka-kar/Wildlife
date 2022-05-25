@@ -7,17 +7,24 @@
 .header {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
-    margin-bottom: 120px;
+    box-sizing: border-box;  
+    margin-bottom: 120px; 
 }
 
-.logo-image {
+.logo {
+    display: flex;
+    width: 290px; 
     margin-top: 19px;
+    align-items:center; 
+}
+
+.logo-image, .logofooter {
     width: 70px;
     height: 60px;
+    cursor: pointer;
 }
 
-.wildlife h1, .footer-name h1 {
+.wildlife h1, .wildlife-footer h1 {
     color: #F7F7F7;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -25,12 +32,7 @@
     line-height: 60px;
     text-transform: uppercase;
     margin-left: 15px;
-    
-}
-
-.logo {
-    display: flex;
-    width: 290px;
+    cursor: pointer;    
 }
 
 .navigation {
@@ -81,6 +83,15 @@
     border-radius: 5px;
 }    
 
+.sing-in:hover {
+    background: #CD6326;
+}
+
+.sing-in:active {
+    background: #8F5613;
+    border: #8F5613;
+}
+
 .sing-in a {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -94,7 +105,7 @@
     text-decoration: none;
 }
 
-.navigation li {
+.navigation li, .social li {
     display: inline-block;
 }
 
@@ -109,6 +120,7 @@
     width: 1440px;
     height: 1368px;
     display: flex;
+    padding-top: 120px;
 }
 
 .latest-articles-content {
@@ -124,30 +136,129 @@
     line-height: 72px;
     text-align: center;
     color: #333333;
+    margin-bottom: 20px;
+}
+
+.latest-articles-content h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 120px;
+}
+
+.slayder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin-bottom: 239px;
+}
+
+.centerl {
+    display: flex;
+    width: 1020px;
+    justify-content: space-between;
+}
+
+.rightl, .leftl {
+    cursor: pointer;
+}
+
+.new-articles {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.new-articles h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 40px;
+    color: #333333;
+    margin-bottom: 59px;
+}
+
+.new-articles .mail form {
+    display: flex;
+    justify-content: center;
+    box-sizing:border-box;
+
+}
+
+.new-articles .email {
+    height: 60px;
+    width: 540px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #666666;
+    background-color: #CCCCCC;
+    border: 1px #666666 solid;
+    padding-left: 15px;
+}
+
+.new-articles .send {
+    width: 120px;
+    height: 60px;
+    background: #CD6326;
+    border: 1px solid #CD6326;
+    border-radius: 0px 5px 5px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F7F7F7;
+    cursor: pointer;
 }
 
 .footer {
     background-image: url(footer.jpg);
     height: 360px;
     width: 1440px;
-    display: flex;
+    padding-top: 150px;
 }
 
-.slayder {
+.footer-content {
     display: flex;
-}
-
-.centerl {
-    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 
 .footer-name {
     display: flex;
 }
 
-.navigation-footer, .navigation-footer ul {
+.navigation-footer ul {
     display: flex;
+    justify-content: space-between;
     list-style: none;
+    width: 480px;
+}
+
+.navigation-footer a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 60px;
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+.social ul{
+    width: 241px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 
 .facebook {
@@ -155,21 +266,22 @@
 }
 
 .instagramm {
-    background-image: url(instagramm.svg)
+    background-image: url(instagramm.svg);
 }
 
 .pin {
-    background-image: url(pin.svg)
+    background-image: url(pin.svg);
 }
 
 .telegramm {
-    background-image: url(telegramm.svg)
+    background-image: url(telegramm.svg);
 }
 
 .facebook, .instagramm, .pin, .telegramm {
     width: 40px;
     height: 40px;
     background-size: 40px 40px;
+    cursor: pointer;
 }
 
 .header, .survival, .latest-articles-content, .footer-content {
@@ -226,4 +338,13 @@
     line-height: 27px;
     text-align: center;
     color: #F7F7F7;
+    cursor: pointer;
+}
+
+.survival button:hover {
+    background: #E39128;
+}
+
+.survival button:active {
+    background: #8F5613;
 }
